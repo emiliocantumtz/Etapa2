@@ -19,14 +19,14 @@ def header():
   col1, col2 = st.columns(2)
   
   with col1:
-    button1 = st.button("TRC?")
+    button1 = st.button("Costos de Operación")
     if button1:
         st.write("Si")
     elif not button1:
         st.write("Golf")
         
   with col2:
-    button2 = st.button("TRC")
+    button2 = st.button("Márgenes/Punto de equilibrio")
     if button2:
         st.write("No")
     elif not button1:
