@@ -13,28 +13,28 @@ def header():
   with col1:
     button1 = st.button("Costos de Operación")
     if button1:
-        st.write("Gráfica")
+        st.write("Costos de Operación")
     elif not button1:
         st.write("")
         
   with col2:
     button2 = st.button("Márgenes/Punto de equilibrio")
     if button2:
-        st.write("Gráfica")
+        st.write("Márgenes/Punto de equilibrio")
     elif not button1:
         st.write("")
    
   with col3:
     button3 = st.button("Ventas/Ingresos")
     if button3:
-        st.write("Gráfica")
+        st.write("Ventas/Ingresos")
     elif not button1:
         st.write("")
         
   with col4:
     button4 = st.button("Reinversiones")
     if button4:
-        st.write("Gráfica")
+        st.write("Reinversionesa")
     elif not button1:
         st.write("")
   
