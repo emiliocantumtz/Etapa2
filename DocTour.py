@@ -21,7 +21,7 @@ def header():
   with col1:
     button1 = st.button("Costos de Operación")
     if button1:
-        st.write("Si")
+        st.write("Gráfica")
     elif not button1:
         st.write("Golf")
         
