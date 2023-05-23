@@ -32,8 +32,8 @@ def header():
         st.write("")
         
   with col4:
-    button4 = st.button("Márgenes/Punto de equilibrio")
-    if button3:
+    button4 = st.button("Reinversiones")
+    if button4:
         st.write("Gráfica")
     elif not button1:
         st.write("")
