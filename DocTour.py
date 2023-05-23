@@ -18,9 +18,9 @@ def header():
         st.write("")
         
   with col2:
-    button2 = st.button("Márgenes/Punto de equilibrio")
+    button2 = st.button("Punto de equilibrio")
     if button2:
-        st.write("Márgenes/Punto de equilibrio")
+        st.write("Punto de equilibrio")
     elif not button1:
         st.write("")
    
@@ -32,9 +32,9 @@ def header():
         st.write("")
         
   with col4:
-    button4 = st.button("Reinversiones")
+    button4 = st.button("Utilidad")
     if button4:
-        st.write("Reinversionesa")
+        st.write("Utilidad")
     elif not button1:
         st.write("")
   
