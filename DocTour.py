@@ -15,7 +15,7 @@ def sidebar():
             st.write(text)
  
 def header():
-  st.header("TRC")
+  st.header("Variables Críticas")
   col1, col2 = st.columns(2)
   
   with col1:
