@@ -23,14 +23,14 @@ def header():
     if button1:
         st.write("Gráfica")
     elif not button1:
-        st.write("Golf")
+        st.write("")
         
   with col2:
     button2 = st.button("Márgenes/Punto de equilibrio")
     if button2:
-        st.write("No")
+        st.write("Gráfica")
     elif not button1:
-        st.write("Golf'nt")
+        st.write("")
           
 sidebar()
 header()
