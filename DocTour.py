@@ -41,7 +41,7 @@ def header():
 def barra():
     chart_data = pd.DataFrame(
         np.random.randn(20, 3),
-        columns=['Costo de operacion', 'Ingresos por membresias activas'])
+        columns=['Costo de operacion', 'Ingresos por membresias activas', 'c'])
      
     st.line_chart(chart_data)
           
