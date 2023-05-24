@@ -11,26 +11,27 @@ def header():
   col1, col2 = st.columns(2)
   
   with col1:
-    button1 = st.button("Costo de Operación por Ingresos")
+    button1 = st.button("Costo de Operación contra Ingresos")
     if button1:
-        st.write("Costo de Operación por Ingresos")
+        st.write("Costo de Operación contra Ingresos")
     elif not button1:
         st.write("")
         
   with col2:
-    button2 = st.button("")
+    button2 = st.button("Ventas por vendedor contra periodo")
     if button2:
-        st.write("")
+        st.write("Ventas por vendedor contra periodo")
     elif not button1:
         st.write("")
   
-def barra():
-    chart_data = pd.DataFrame(
-        np.random.randn(20, 3),
-        columns=['Costo de operacion', 'Ingresos por membresias activas', 'Ingresos por pruebas de covid'])
-     
-    st.line_chart(chart_data)
+def csv():
+    csv_url = "https://raw.githubusercontent.com/emiliocantumtz/Etapa2/main/data.csv"
+    # Load the .csv file
+    df = pd.read_csv(csv_url, encoding='utf-8')
+    # Display the table using Streamlit
+    st.line_chart(df)
           
 sidebar()
 header()
 barra()
+csv()
