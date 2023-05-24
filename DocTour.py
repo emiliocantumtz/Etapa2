@@ -33,5 +33,4 @@ def csv():
           
 sidebar()
 header()
-barra()
 csv()
