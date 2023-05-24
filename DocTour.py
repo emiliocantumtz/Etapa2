@@ -33,4 +33,3 @@ def csv():
           
 sidebar()
 header()
-csv()
