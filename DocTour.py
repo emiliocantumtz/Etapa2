@@ -24,13 +24,13 @@ def header():
     elif not button1:
         st.write("")
   
-def csv():
-    csv_url = "https://raw.githubusercontent.com/emiliocantumtz/Etapa2/main/data.csv"
-    # Load the .csv file
-    df = pd.read_csv(csv_url, encoding='utf-8')
-    # Display the table using Streamlit
-    st.line_chart(df)
+def barra():
+    chart_data = pd.DataFrame(
+        np.random.randn(20, 3),
+        columns=['Costo de operacion', 'Ingresos por membresias activas', 'Ingresos por pruebas de covid'])
+     
+    st.line_chart(chart_data)
           
 sidebar()
 header()
-csv()
+barra()
