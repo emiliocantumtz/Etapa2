@@ -7,7 +7,7 @@ def sidebar():
     st.markdown("<h1 style='text-align: center; color: #7D3C98 ;'> DocTour</h1>", unsafe_allow_html=True)
  
 def header():
-  st.header("Variables Críticas")
+  st.header("Gestión financiera y contable")
   col1, col2 = st.columns(2)
   
   with col1:
