@@ -41,7 +41,7 @@ def header():
 def barra():
     chart_data = pd.DataFrame(
         np.random.randn(20, 3),
-        columns=['CO', 'IMA'])
+        columns=['a', 'b'])
 
     st.bar_chart(chart_data)
           
