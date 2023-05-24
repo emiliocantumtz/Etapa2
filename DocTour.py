@@ -8,12 +8,19 @@ def sidebar():
  
 def header():
   st.header("Gestión financiera y contable")
-  col1 = st.columns(1)
+  col1, col2 = st.columns(2)
   
   with col1:
     button1 = st.button("Costo de Operación por Ingresos")
     if button1:
         st.write("Costo de Operación por Ingresos")
+    elif not button1:
+        st.write("")
+        
+  with col2:
+    button2 = st.button("")
+    if button2:
+        st.write("")
     elif not button1:
         st.write("")
   
