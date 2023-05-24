@@ -8,10 +8,10 @@ def sidebar():
  
 def header():
   st.header("Variables Críticas")
-  col1, col2 = st.columns(4)
+  col1, col2, col3 = st.columns(4)
   
   with col1:
-    button1 = st.button("Costo de Operación por Ingresos")
+    button1 = st.button("Costos de Operación")
     if button1:
         st.write("Costos de Operación")
     elif not button1:
@@ -21,6 +21,13 @@ def header():
     button2 = st.button("Punto de equilibrio")
     if button2:
         st.write("Punto de equilibrio")
+    elif not button1:
+        st.write("")
+        
+  with col3:
+    button3 = st.button("Márgen")
+    if button3:
+        st.write("Márgen")
     elif not button1:
         st.write("")
   
