@@ -39,12 +39,11 @@ def header():
         st.write("")
   
 def barra():
+    chart_data = pd.DataFrame(
+        np.random.randn(20, 3),
+        columns=['costo de operación', 'ingresos por membresías activas'])
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=['costo de operación', 'ingresos por membresías activas'])
-
-st.line_chart(chart_data)
+    st.line_chart(chart_data)
           
 sidebar()
 header()
