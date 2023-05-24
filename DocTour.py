@@ -11,9 +11,9 @@ def header():
   col1, col2 = st.columns(4)
   
   with col1:
-    button1 = st.button("Costos de Operación")
+    button1 = st.button("Costo de Operación por Ingresos")
     if button1:
-        st.write("Costo de Operación / Ingresos")
+        st.write("Costos de Operación")
     elif not button1:
         st.write("")
         
