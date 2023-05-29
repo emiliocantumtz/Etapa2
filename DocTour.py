@@ -1,4 +1,4 @@
-from __future__ import annnotations
+from _future_ import annnotations
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
