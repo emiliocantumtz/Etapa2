@@ -1,4 +1,4 @@
-from _future_ import annnotations
+from __future__ import annnotations
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
@@ -14,13 +14,6 @@ def sidebar():
         icons = ["gear", "bar-chart", "person-badge"], #optional --- https://icons.getbootstrap.com/
         orientation = "horizontal",
     )
-    
-    if select == "Home":
-        st.title(f"You have selected {select}")
-    elif select == "Projects":
-        st.title(f"You have selected {select}")
-    elif select == "Contact":
-        st.title(f"You have selected {select}")
  
 def header():
   st.header("Gestión financiera y contable")
