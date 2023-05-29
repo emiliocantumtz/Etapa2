@@ -1,3 +1,4 @@
+from __future__ import annnotations
 import streamlit as st
 import pandas as pd
 import numpy as np
