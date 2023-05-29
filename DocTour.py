@@ -5,6 +5,20 @@ import numpy as np
 def sidebar():
     # st.title("O")
     st.markdown("<h1 style='text-align: center; color: #7D3C98 ;'> DocTour</h1>", unsafe_allow_html=True)
+    
+    select = option_menu(
+        menu_title = None, #required
+        options = ["Operaciones", "Ventas", "Membresías"], #required
+        icons = ["gear", "bar-chart", "person-badge"], #optional --- https://icons.getbootstrap.com/
+        orientation = "horizontal",
+    )
+    
+    if select == "Home":
+        st.title(f"You have selected {select}")
+    elif select == "Projects":
+        st.title(f"You have selected {select}")
+    elif select == "Contact":
+        st.title(f"You have selected {select}")
  
 def header():
   st.header("Gestión financiera y contable")
