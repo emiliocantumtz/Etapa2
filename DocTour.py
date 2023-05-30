@@ -56,11 +56,11 @@ def chart():
                 "Month":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
             })
                 
-            line_chart = alt.Chart(source).mark_line().encode(
+            bar_chart = alt.Chart(source).mark_bar().encode(
                 y = "Memberships",
                 x = "Month",
             )
-            st.altair_chart(line_chart, use_container_width=True)
+            st.altair_chart(bar_chart, use_container_width=True)
           
 sidebar()
 header()
