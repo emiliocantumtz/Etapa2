@@ -45,12 +45,12 @@ def chart():
     
     with col1:
             source = pd.DataFrame({
-                "Dinero":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17], "Operacion":[ 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25],
+                "Ingresos":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17],
                 "Mes":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
             })
                 
             line_chart = alt.Chart(source).mark_line().encode(
-                y = "Dinero, Operacion",
+                y = "Ingresos",
                 x = "Mes",
             )
             st.altair_chart(line_chart, use_container_width=True)
