@@ -39,13 +39,28 @@ def header():
     elif not button1:
         st.write("")
   
-def csv():
-    csv_url = "https://raw.githubusercontent.com/IngDanielRG/Streamlit_DRG/main/try.csv"
-    # Load the .csv file
-    df = pd.read_csv(csv_url, encoding='utf-8')
-    # Display the table using Streamlit
-    st.line_chart(df)
+def chart():
+    col1, col2 = st.columns(2)
+    
+    with col1:
+            csv_url = "https://raw.githubusercontent.com/IngDanielRG/Streamlit_DRG/main/try.csv"
+            # Load the .csv file
+            df = pd.read_csv(csv_url, encoding='utf-8')
+            # Display the table using Streamlit
+            st.line_chart(df)
+            
+    with col2:
+            source = pd.DataFrame({
+                "Memberships":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17],
+                "Month":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
+            })
+                
+            bar_chart = alt.Chart(source).mark_bar().encode(
+                y = "Memberships",
+                x = "Month",
+            )
+            st.altair_chart(bar_chart, use_container_width=True)
           
 sidebar()
 header()
-csv()
+chart()
