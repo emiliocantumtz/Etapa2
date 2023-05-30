@@ -22,23 +22,18 @@ def sidebar():
     elif select == "Contact":
         st.title(f"You have selected {select}") 
 
-def header():
-  st.header("Gestión financiera y contable")
-  col1, col2 = st.columns(2)
-  
+def buttons():
+  st.header("TRC")
+  col1, col2, col3 = st.columns(3)
+        
   with col1:
-    button1 = st.button("Costo de Operación contra Ingresos")
-    if button1:
-        st.write("Costo de Operación contra Ingresos")
-    elif not button1:
-        st.write("")
+    col1.metric("Ingresos por Membresía", "100K", "20%")
         
   with col2:
-    button2 = st.button("Ventas por vendedor contra periodo")
-    if button2:
-        st.write("Ventas por vendedor contra periodo")
-    elif not button1:
-        st.write("")
+    col2.metric("Ingresos por Vendedor", "100K", "20%")
+
+  with col3:
+    col3.metric("Costos de Operación", "100K", "-4.2")
   
 def chart():
     col1, col2 = st.columns(2)
