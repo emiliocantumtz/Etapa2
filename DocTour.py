@@ -50,7 +50,7 @@ def chart():
             })
                 
             line_chart = alt.Chart(source).mark_line().encode(
-                y = "Dinero", "Operacion",
+                y = "Dinero, Operacion",
                 x = "Mes",
             )
             st.altair_chart(line_chart, use_container_width=True)
