@@ -27,13 +27,13 @@ def buttons():
   col1, col2, col3 = st.columns(3)
         
   with col1:
-    col1.metric("Ingresos por Membresía", "100K", "20%")
+    col1.metric("Ingresos por membresía Mayo 2023", "120K", "20%")
         
   with col2:
-    col2.metric("Ingresos por Vendedor", "100K", "20%")
+    col2.metric("Ingresos por vendedor Mayo 2023", "30K", "20%")
 
   with col3:
-    col3.metric("Costos de Operación", "100K", "-4.2")
+    col3.metric("Costos de operación Mayo 2023", "100K", "-4.2")
   
 def chart():
     col1, col2 = st.columns(2)
