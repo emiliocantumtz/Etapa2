@@ -33,7 +33,7 @@ def buttons():
     col2.metric("Costos de operación Mayo 2023", "100K", "-4.2")
 
   with col3:
-    col3.metric("Ingresos por vendedor Mayo 2023", "30K", "20%")
+    col3.metric("Utilidad/Pérdida Mayo 2023", "20K", "20%")
   
 def chart():
     col1, col2 = st.columns(2)
