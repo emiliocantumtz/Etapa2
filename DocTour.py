@@ -15,12 +15,7 @@ def sidebar():
         orientation = "horizontal",
     )
     
-    if select == "Home":
-        st.title(f"You have selected {select}")
-    elif select == "Projects":
-        st.title(f"You have selected {select}")
-    elif select == "Contact":
-        st.title(f"You have selected {select}") 
+
 
 def buttons():
   st.header("DocTour")
