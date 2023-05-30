@@ -36,7 +36,7 @@ def buttons():
     col3.metric("Utilidad/Pérdida Mayo 2023", "20K", "20%")
   
 def chart():
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
             source = pd.DataFrame({
@@ -59,6 +59,17 @@ def chart():
             bar_chart = alt.Chart(source).mark_bar().encode(
                 y = "Membresias",
                 x = "Mes",
+            )
+            st.altair_chart(bar_chart, use_container_width=True)
+    with col3:
+            source = pd.DataFrame({
+                "Membresias":[ 180, 153, 197, 76],
+                "Año":["2020", "2021", "2022", "2023"]
+            })
+                
+            bar_chart = alt.Chart(source).mark_bar().encode(
+                y = "Membresias",
+                x = "Año",
             )
             st.altair_chart(bar_chart, use_container_width=True)
           
