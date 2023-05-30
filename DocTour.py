@@ -23,7 +23,7 @@ def sidebar():
         st.title(f"You have selected {select}") 
 
 def buttons():
-  st.header("TRC")
+  st.header("DocTour")
   col1, col2, col3 = st.columns(3)
         
   with col1:
@@ -63,5 +63,5 @@ def chart():
             st.altair_chart(bar_chart, use_container_width=True)
           
 sidebar()
-header()
+buttons()
 chart()
