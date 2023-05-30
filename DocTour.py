@@ -15,23 +15,12 @@ def sidebar():
         orientation = "horizontal",
     )
     
-def header():
-  st.header("Gestión financiera y contable")
-  col1, col2 = st.columns(2)
-  
-  with col1:
-    button1 = st.button("Resumen mensual")
-    if button1:
-        st.write("Resumen mensual")
-    elif not button1:
-        st.write("")
-        
-  with col2:
-    button2 = st.button("Detalle de ingresos mensuales")
-    if button2:
-        st.write("Detalle de ingresos mensuales")
-    elif not button1:
-        st.write("")
+    if select == "Resumen mensual":
+        st.title(f"You have selected {select}")
+    elif select == "Detalle de ingresos mensuales":
+        st.title(f"You have selected {select}")
+    elif select == "Detalle de gastos mensuales":
+        st.title(f"You have selected {select}") 
 
 def buttons():
   st.header("DocTour")
