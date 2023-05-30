@@ -44,21 +44,26 @@ def chart():
     col1, col2 = st.columns(2)
     
     with col1:
-            csv_url = "https://raw.githubusercontent.com/IngDanielRG/Streamlit_DRG/main/try.csv"
-            # Load the .csv file
-            df = pd.read_csv(csv_url, encoding='utf-8')
-            # Display the table using Streamlit
-            st.line_chart(df)
+            source = pd.DataFrame({
+                "Dinero":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17],
+                "Mes":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
+            })
+                
+            line_chart = alt.Chart(source).mark_line().encode(
+                y = "Dinero",
+                x = "Mes",
+            )
+            st.altair_chart(line_chart, use_container_width=True)
             
     with col2:
             source = pd.DataFrame({
-                "Memberships":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17],
-                "Month":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
+                "Membresias":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17],
+                "Mes":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
             })
                 
             bar_chart = alt.Chart(source).mark_bar().encode(
-                y = "Memberships",
-                x = "Month",
+                y = "Membresias",
+                x = "Mes",
             )
             st.altair_chart(bar_chart, use_container_width=True)
           
