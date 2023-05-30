@@ -15,11 +15,11 @@ def sidebar():
         orientation = "horizontal",
     )
     
-    if select == "Resumen mensual":
+    if select == "Home":
         st.title(f"You have selected {select}")
-    elif select == "Detalle de ingresos mensuales":
+    elif select == "Projects":
         st.title(f"You have selected {select}")
-    elif select == "Detalle de gastos mensuales":
+    elif select == "Contact":
         st.title(f"You have selected {select}") 
 
 def buttons():
