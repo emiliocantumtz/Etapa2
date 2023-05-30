@@ -10,7 +10,7 @@ def sidebar():
     
     select = option_menu(
         menu_title = None, #required
-        options = ["Operaciones", "Ventas", "Membresías"], #required
+        options = ["Resumen mensual", "Detalle de ingresos", "Detalle de gastos"], #required
         icons = ["gear", "bar-chart", "person-badge"], #optional --- https://icons.getbootstrap.com/
         orientation = "horizontal",
     )
