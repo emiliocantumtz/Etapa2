@@ -30,7 +30,7 @@ def buttons():
     col1.metric("Ingresos por membresía Mayo 2023", "120K", "20%")
         
   with col2:
-    col2.metric("Costos de operación Mayo 2023", "100K", "-4.2")
+    col2.metric("Costos de operación Mayo 2023", "100K", "-4.2%")
 
   with col3:
     col3.metric("Utilidad/Pérdida Mayo 2023", "20K", "20%")
