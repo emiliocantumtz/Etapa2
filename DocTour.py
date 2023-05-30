@@ -56,7 +56,7 @@ def chart():
                 "Month":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
             })
                 
-            bar_chart = alt.Chart(source).mark_line().encode(
+            line_chart = alt.Chart(source).mark_line().encode(
                 y = "Memberships",
                 x = "Month",
             )
