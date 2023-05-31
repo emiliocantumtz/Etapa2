@@ -69,8 +69,8 @@ def chart():
             
      with col4:
         # Pie chart, where the slices will be ordered and plotted counter-clockwise:
-            labels = 'Frogs', 'Hogs', 'Dogs', 'Logs'
-            sizes = [15, 30, 45, 10]
+            labels = 'Básica', 'Black', 'Platino'
+            sizes = [5, 4, 2]
             explode = (0, 0.1, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
             fig1, ax1 = plt.subplots()
