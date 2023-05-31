@@ -16,7 +16,7 @@ def sidebar():
     )
 
 def buttons():
-  st.header("DocTour")
+  st.header("Gestión financiera y contable")
   col1, col2, col3 = st.columns(3)
         
   with col1:
@@ -56,7 +56,7 @@ def chart():
     with col3:
              source = pd.DataFrame({
                 "Cierres":[ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
-                "Leads":[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+                "Leads":["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"]
             })
                 
             line_chart = alt.Chart(source).mark_line().encode(
