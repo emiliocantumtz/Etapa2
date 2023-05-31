@@ -54,11 +54,16 @@ def chart():
             )
             st.altair_chart(bar_chart, use_container_width=True)
     with col3:
-            chart_data = pd.DataFrame(
-                np.random.randn(20, 3),
-                columns=['Vendedor a', 'Vendedor b', 'Vendedor c'])
-
-    st.line_chart(chart_data)
+             source = pd.DataFrame({
+                "Cierres":[ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+                "Leads":[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+            })
+                
+            line_chart = alt.Chart(source).mark_line().encode(
+                y = "Cierres",
+                x = "Leads",
+            )
+            st.altair_chart(line_chart, use_container_width=True)
           
 sidebar()
 buttons()
