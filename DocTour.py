@@ -34,7 +34,7 @@ def chart():
     with col1:
             source = pd.DataFrame({
                 "Membresias":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17],
-                "Mes":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
+                "Mes":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"]
             })
                 
             bar_chart = alt.Chart(source).mark_bar().encode(
@@ -56,7 +56,7 @@ def chart():
     with col3:
             source = pd.DataFrame({
                 "Cierres":[ 15, 14, 9, 24, 11, 15, 15, 18, 14, 15, 13, 17],
-                "Leads":["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEPT", "OCT", "NOV", "DIC"]
+                "Leads":["10", "20", "30", "40", "50", "60", "70", "80", "90", "100", "110", "120"]
             })
                 
             line_chart = alt.Chart(source).mark_line().encode(
