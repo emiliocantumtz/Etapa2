@@ -58,7 +58,7 @@ def chart():
                 np.random.randn(20, 3),
                 columns=['Vendedor a', 'Vendedor b', 'Vendedor c'])
 
-    st.bar_chart(chart_data)
+    st.pie_chart(chart_data)
           
 sidebar()
 buttons()
