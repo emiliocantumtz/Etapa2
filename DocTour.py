@@ -20,13 +20,13 @@ def buttons():
   col1, col2, col3 = st.columns(3)
         
   with col1:
-    col1.metric("Ventas membresía básica Mayo 2023", "7", "20%")
+    col1.metric("Ventas membresía básica Mayo 2023", "5", "20%")
         
   with col2:
-    col2.metric("Ventas membresía black Mayo 2023", "3", "-3%")
+    col2.metric("Ventas membresía black Mayo 2023", "4", "-3%")
 
   with col3:
-    col3.metric("Ventas membresía platinno Mayo 2023", "1", "5%")
+    col3.metric("Ventas membresía platino Mayo 2023", "2", "5%")
   
 def chart():
     col1, col2 = st.columns(2)
