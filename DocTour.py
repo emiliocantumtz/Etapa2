@@ -55,8 +55,8 @@ def chart():
             st.altair_chart(bar_chart, use_container_width=True)
     with col3:
             source = pd.DataFrame({
-                "Cierres":[ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
-                "Leads":["10", "20", "30", "40", "50", "60", "70", "80", "90", "100", "110", "120"]
+                "Cierres":[ 5, 10, 15, 20, 25, 30, 35, 40],
+                "Leads":["10", "20", "30", "40", "50", "60"]
             })
                 
             line_chart = alt.Chart(source).mark_line().encode(
