@@ -29,7 +29,7 @@ def buttons():
     col3.metric("Ventas membresía platino Mayo 2023", "2", "5%")
   
 def chart():
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
             
     with col1:
             source = pd.DataFrame({
@@ -53,6 +53,12 @@ def chart():
                 x = "Año",
             )
             st.altair_chart(bar_chart, use_container_width=True)
+    with col3:
+            chart_data = pd.DataFrame(
+                np.random.randn(20, 3),
+                columns=['Vendedor a', 'Vendedor b', 'Vendedor c'])
+
+    st.bar_chart(chart_data)
           
 sidebar()
 buttons()
